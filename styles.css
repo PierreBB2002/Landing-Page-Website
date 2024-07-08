@@ -1,0 +1,105 @@
+main header {
+    background-color: #5c5b5c86;
+    padding: 15px 0;
+    text-align: center;
+    /* to fill 100% of width of the page */
+    width: 100%;
+    top: 0;
+    display: block;
+    z-index: 1000;
+    /* to make the header fixed to a specific position (at the top) */
+    position: fixed;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav li {
+    /* To arrange the navigator bar in a line (horizontally) */
+    display: inline;
+    margin: 0 10px;
+}
+
+main {
+    /* This is the main section */
+    background-color: #edeff0;
+    max-width: 100%;
+    max-height: 100%;
+    /* To appear under the header */
+    padding-top: 60px;
+}
+
+/* body of the page */
+body {
+    background-color: #edeff0;
+}
+
+nav li button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* hover when clicking on or pointing on buttons of the navigator bar */
+nav li button:hover {
+    background-color: #edeff0;
+    color: black;
+}
+
+/* attributes of the paragraph element of each section */
+p {
+    margin-bottom: 500px;
+    margin-left: 10px;
+    max-width: 60%;
+}
+
+.Main-section h2 {
+    margin: 190px 0 0 0;
+    font-size: 40px;
+    text-align: center;
+    color: black;
+}
+
+.Main-section h3 {
+    margin: 30px 0 190px 0;
+    font-size: 40px;
+    text-align: center;
+    color: black;
+}
+
+/* attributes of the header element of each section */
+h3 {
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+/* To show the scroll button when scrolling */
+#scrollToTheTop.show {
+    display: block;
+}
+
+/* To show the scroll button when the user starts scrolling */
+#scrollToTheTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #5c5b5c86;
+    color: #fff;
+    padding: 17px 12px;
+    border: bisque;
+    cursor: pointer;
+}
+
+nav ul li button.active {
+    text-decoration: underline;
+    /* Highlight the button */
+    background-color: #edeff0;
+    /* Highlight the text color */
+    color: #000000;
+}
